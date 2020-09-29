@@ -1,0 +1,29 @@
+{
+  "name": "blessed-widget-manager",
+  "version": "0.0.1",
+  "description": "A centralized management module for blessed widgets.",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flatten-js/blessed-widget-manager.git"
+  },
+  "keywords": [
+    "blessed",
+    "blessed-contrib"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flatten-js/blessed-widget-manager/issues"
+  },
+  "homepage": "https://github.com/flatten-js/blessed-widget-manager#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  }
+}
