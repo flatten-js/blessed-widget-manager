@@ -26,8 +26,11 @@ export default class WidgetManager {
     this.widget[name] = widget
   }
 
-  exec(name, opts = {}) {
-    this._narrow(opts).forEach(widget => widget[name]())
+  exec(names, opts = {}) {
+    names = [].concat(names)
+    this._narrow(opts).forEach(widget => {
+      names.forEach(name => widget[name]())
+    })
   }
 
   _narrow({ only, except = [] }) {
